@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-image: url('/images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  min-height: 1300px;
+  max-width: 750px;
+  color: white;
+}
+
+.header-wrapper {
+  padding: 80px 48px 0 48px;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 350px;
+}
+
+.header-title h1 {
+  font-family: 'Alata', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hero-title-container {
+  border: 2px solid white;
+  padding: 55px;
+}
+
+.hero-title-container p {
+  font-family: 'Josefin-sans', sans-serif;
+  font-weight: 300;
+  font-size: 57px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.hamburger-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hamburger-line {
+  width: 49px;
+  height: 5px;
+  background-color: white;
+}

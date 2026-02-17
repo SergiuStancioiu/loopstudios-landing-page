@@ -28,12 +28,6 @@ body {
   margin-bottom: 350px;
 }
 
-.header-title h1 {
-  font-family: 'Alata', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-}
-
 .hero-title-container {
   border: 2px solid white;
   padding: 55px;
@@ -57,4 +51,21 @@ body {
   width: 49px;
   height: 5px;
   background-color: white;
+}
+
+.info-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 193px 50px 0 50px;
+}
+
+.description-image-container {
+  margin-bottom: 100px;
+}
+
+.info-description-container h2 {
+  font-family: 'Josefin-sans', sans-serif;
+  text-transform: uppercase;
 }

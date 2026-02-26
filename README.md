@@ -19,3 +19,7 @@ Created the project and repository and worked on header and I choose to include 
 ## Day 2
 
 Created the project and repository and worked on header and I choose to include in it the hero section (3 hours)
+
+## Day 3
+
+Resolved HTML and CSS issues and continued development of the mobile and desktop designs. (3 hours)

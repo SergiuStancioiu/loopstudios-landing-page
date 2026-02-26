@@ -10,7 +10,7 @@ body {
 }
 
 .header-container {
-  background-image: url('/images/mobile/image-hero.jpg');
+  background-image: url('images/mobile/image-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -199,7 +199,7 @@ body {
   }
 
   .header-container {
-    background-image: url('/images/desktop/image-hero.jpg');
+    background-image: url('images/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

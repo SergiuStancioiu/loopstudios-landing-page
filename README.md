@@ -22,4 +22,4 @@ Created the project and repository and worked on header and I choose to include 
 
 ## Day 3
 
-Resolved HTML and CSS issues and continued development of the mobile and desktop designs. (3 hours)
+Resolved HTML and CSS issues and continued developing the mobile and desktop designs. Worked on the footer section for both mobile and desktop, and then fixed all design issues on mobile.(3 hours)

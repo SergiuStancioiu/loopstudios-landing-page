@@ -11,3 +11,11 @@ Thanks for checking out this front-end coding challenge.
 - [GitHub Pages](https://pages.github.com/)
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
+
+## Day 1
+
+Created the project and repository and worked on header and I choose to include in it the hero section (3 hours)
+
+## Day 2
+
+Created the project and repository and worked on header and I choose to include in it the hero section (3 hours)

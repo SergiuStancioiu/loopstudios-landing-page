@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 h1,
 h2,
@@ -11,16 +12,17 @@ body {
 .header-container {
   background-image: url('/images/mobile/image-hero.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
-  min-height: 1300px;
-  max-width: 750px;
+  min-height: 100vh;
+  width: 100%;
   color: white;
 }
 
 .header-wrapper {
   padding: 80px 48px 0 48px;
 }
+
 .header-title {
   display: flex;
   align-items: center;
@@ -33,39 +35,192 @@ body {
   padding: 55px;
 }
 
-.hero-title-container p {
-  font-family: 'Josefin-sans', sans-serif;
+.hero-title-container h1 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 57px;
-  font-style: normal;
   text-transform: uppercase;
 }
 
 .hamburger-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hamburger-line {
-  width: 49px;
-  height: 5px;
+  width: 32px;
+  height: 3px;
   background-color: white;
 }
 
 .info-description-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 193px 50px 0 50px;
+  padding: 193px 50px 0;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .description-image-container {
   margin-bottom: 100px;
 }
 
-.info-description-container h2 {
-  font-family: 'Josefin-sans', sans-serif;
+.info-description-container h1,
+.our-creations-container h1 {
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
+  font-weight: 300;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.info-description-container p {
+  font-family: 'Alata', sans-serif;
+  font-size: 30px;
+  color: #797979;
+  line-height: 1.6;
+  padding: 0 50px;
+}
+
+.our-creations-container {
+  text-align: center;
+  padding: 0px 40px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.our-creations {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.creation-wrapper {
+  text-align: start;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.creation-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 40px;
+  max-width: 260px;
+  z-index: 2;
+}
+
+.our-creations-container .creation-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creation-button {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+.creation-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.mobile {
+  display: block;
+  margin-bottom: 190px;
+}
+
+.our-creations-container .desktop {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .creation-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .creation-heading h1 {
+    margin: 0;
+  }
+  .our-creations-container .mobile {
+    display: none;
+  }
+
+  .our-creations-container .desktop {
+    display: block;
+  }
+  .image-container {
+    height: 450px;
+  }
+
+  .our-creations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 48px;
+  }
+
+  .header-container {
+    background-image: url('/images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+  }
+
+  .header-title {
+    margin-bottom: 195px;
+  }
+}
+
+@media (min-width: 992px) {
+  .image-container {
+    height: 450px;
+  }
+
+  .our-creations {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 48px;
+  }
 }

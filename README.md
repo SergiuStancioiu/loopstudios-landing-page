@@ -26,4 +26,4 @@ Resolved HTML and CSS issues and continued developing the mobile and desktop des
 
 ## Day 4
 
-Resolved all responsiveness issues across mobile, tablet, and desktop devices. (2 hours)
+Resolved all responsiveness issues across mobile, tablet, and desktop devices. Implemented a mobile menu and added the required functionality. (3 hours)

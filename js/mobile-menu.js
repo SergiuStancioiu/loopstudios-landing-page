@@ -5,7 +5,7 @@ function showMobileNavLinks() {
   const mobileNavLinks = document.querySelectorAll('.mobile-navbar a');
 
   navLinkButton.addEventListener('click', () => {
-    navLinksMeniu.classList.toggle('show-mobile-links');
+    navLinkMeniu.classList.toggle('show-mobile-links');
     document.body.classList.toggle('hide-sidebar');
   });
 
@@ -18,7 +18,7 @@ function showMobileNavLinks() {
   });
 
   function closeMenu() {
-    navLinksMeniu.classList.remove('show-mobile-links');
+    navLinkMeniu.classList.remove('show-mobile-links');
     document.body.classList.remove('hide-sidebar');
   }
 }

@@ -33,6 +33,7 @@ p {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 150px;
+  cursor: pointer;
 }
 
 .hero-title-container {
@@ -78,7 +79,7 @@ p {
   width: 100%;
 }
 
-.info-description-container h1,
+.loopstudios-description-wrapper h1,
 .creation-heading h1 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
@@ -86,11 +87,12 @@ p {
   font-size: 28px;
 }
 
-.creation-heading {
+.creation-heading,
+.loopstudios-description-wrapper h1 {
   margin-bottom: 20px;
 }
 
-.info-description-container p {
+.loopstudios-description-wrapper p {
   font-family: 'Alata', sans-serif;
   font-size: 18px;
   color: #797979;
@@ -99,9 +101,10 @@ p {
 }
 
 /* ---------- OUR CREATIONS ---------- */
-.our-creations-container {
+
+.info-description-container {
   text-align: center;
-  padding: 0 20px;
+  padding: 80px 20px;
   max-width: 1150px;
   margin: 0 auto;
 }
@@ -116,6 +119,15 @@ p {
 .creation-wrapper {
   text-align: start;
   width: 100%;
+}
+
+.creation-wrapper:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease-out,
+    color 0.3s ease-out,
+    transform 0.3s ease-out;
 }
 
 .image-container {
@@ -158,6 +170,13 @@ p {
   justify-content: center;
 }
 
+.our-creations-container {
+  text-align: center;
+  padding: 0 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .creation-button {
   text-decoration: none;
   border: 1px solid black;
@@ -188,10 +207,16 @@ p {
 /* ---------- FOOTER ---------- */
 .footer-container {
   background-color: black;
-  padding: 60px 20px;
+  width: 100%;
+}
+
+.footer-wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 60px 20px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .footer-logo-links-container {
@@ -242,6 +267,27 @@ p {
   text-align: center;
 }
 
+.footer-links-container a:hover,
+.footer-link-logo-container:hover {
+  border-color: white;
+}
+
+.footer-links-container a,
+.footer-link-logo-container {
+  border-bottom: 2px solid transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  transition:
+    border-color 0.3s ease-out,
+    color 0.3s ease-out,
+    transform 0.3s ease-out;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
 .nav-links {
   display: none;
 }
@@ -267,7 +313,7 @@ p {
 
   .hero-title-container {
     padding: 55px;
-    max-width: 50%;
+    max-width: 85%;
   }
 
   .hero-title-container h1 {
@@ -275,17 +321,8 @@ p {
   }
 
   .info-description-container {
-    padding: 193px 50px 0;
+    padding: 193px 20px 0;
     margin-bottom: 150px;
-  }
-
-  .info-description-container h1 {
-    font-size: 60px;
-  }
-
-  .info-description-container p {
-    font-size: 30px;
-    padding: 0 50px;
   }
 
   .our-creations-container .mobile {
@@ -311,7 +348,7 @@ p {
     max-width: 260px;
   }
 
-  .footer-container {
+  .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -358,11 +395,15 @@ p {
     gap: 40px;
   }
 
-  .nav-links a:hover {
+  .nav-links a:hover,
+  .footer-links-container a:hover,
+  .footer-link-logo-container:hover {
     border-color: white;
   }
 
-  .nav-links a {
+  .nav-links a,
+  .footer-links-container a,
+  .footer-link-logo-container {
     border-bottom: 2px solid transparent;
     color: white;
     text-align: center;
@@ -374,15 +415,62 @@ p {
       color 0.3s ease-out,
       transform 0.3s ease-out;
     padding-bottom: 5px;
+    cursor: pointer;
   }
 
   .hamburger-container {
     display: none;
   }
+
+  .header-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 992px) {
+  .description-image-container img {
+    width: auto;
+  }
+
+  .info-description-container {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .loopstudios-description-wrapper h1 {
+    font-size: 50px;
+    text-align: start;
+    padding: 0 60px;
+  }
+
+  .loopstudios-description-wrapper p {
+    font-size: 17px;
+    padding: 0 60px;
+    text-align: start;
+  }
+
+  .loopstudios-description-wrapper {
+    position: absolute;
+    left: 550px;
+    top: 350px;
+    background-color: white;
+    max-width: 750px;
+    padding-top: 60px;
+  }
   .our-creations {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .hero-title-container {
+    padding: 55px;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-title-container {
+    padding: 55px;
+    max-width: 60%;
   }
 }

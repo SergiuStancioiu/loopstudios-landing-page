@@ -13,6 +13,10 @@ p {
   padding: 0;
 }
 
+.hideSidebar {
+  overflow: hidden;
+}
+
 /* ---------- HEADER / HERO ---------- */
 .header-container {
   background-image: url('../images/mobile/image-hero.jpg');
@@ -22,6 +26,8 @@ p {
   min-height: 100vh;
   width: 100%;
   color: white;
+
+  position: relative;
 }
 
 .header-wrapper {
@@ -53,6 +59,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  cursor: pointer;
 }
 
 .hamburger-line {
@@ -292,6 +299,50 @@ p {
   display: none;
 }
 
+.mobile-navbar {
+  background-color: black;
+  width: 100dvw;
+  height: 100dvh;
+  padding: 40px 24px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.mobile-navbar.show-mobile-links {
+  display: block;
+}
+
+.mobile-close-menu {
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.mobile-nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+  cursor: pointer;
+}
+
 /* ---------- DESKTOP LAYOUT ---------- */
 @media (min-width: 750px) {
   .header-container {
@@ -457,6 +508,7 @@ p {
     background-color: white;
     max-width: 750px;
     padding-top: 60px;
+    padding-bottom: 10px;
   }
   .our-creations {
     grid-template-columns: repeat(4, minmax(0, 1fr));

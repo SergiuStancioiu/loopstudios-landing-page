@@ -1,6 +1,6 @@
 function showMobileNavLinks() {
   const navLinkButton = document.querySelector('.hamburger-container');
-  const navLinksMeniu = document.querySelector('.mobile-navbar');
+  const navLinkMeniu = document.querySelector('.mobile-navbar');
   const mobileCloseMenu = document.querySelector('.mobile-close-menu');
   const mobileNavLinks = document.querySelectorAll('.mobile-navbar a');
 
